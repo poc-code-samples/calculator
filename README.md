@@ -21,6 +21,17 @@ CONS"
 
 Making mistake by adding modules is something difficult to fix in git. 
 
+### Removing modules
+
+As of today `git rm <path to submodule>` && `git commit` will do the trick.
+
+Previous versions of git need more work.
+
+- `rm .git/modules/<path to module>`
+- `git config --remove-section submodule.<path to submodule>`
+- `git rm --cached <path to submodule>`
+- `rm -rf <path to submodule>`
+
 ## Vendoring
 
 Vendoring is about to copy the library content into the source of the main project via some dependency management mechanism. 
