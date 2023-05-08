@@ -19,6 +19,7 @@ CONS"
 - Any potential user can push to library code.
 
 
+Making mistake by adding modules is something difficult to fix in git. 
 
 ## Vendoring
 

@@ -1,0 +1,3 @@
+[submodule "lib-calculator"]
+	path = lib/lib-calculator
+	url = git@github.com:poc-code-samples/lib-calculator.git
