@@ -32,6 +32,19 @@ Previous versions of git need more work.
 - `git rm --cached <path to submodule>`
 - `rm -rf <path to submodule>`
 
+
+## Findings
+
+- Submodules can or can not be updated if they are then when we run status on main project, the submodules wil show (new commits).
+- Update a submodule 
+    - option1: `cd submodule-dir && git fetch && git merge origin/main`
+    - option2: In main project do `git submodule update --remote SubmoduleName`
+
+- Cloning a repository with submodules can be possible by appending --recursive to the `git clone` command. If we do not do this manual update of modules is required after clone
+    - option1: `git clone main-repo && cd submoduledir && git submodule init && git submodule update`
+    - option2: `git clone --recursive main-repo`
+
+    
 ## Vendoring
 
 Vendoring is about to copy the library content into the source of the main project via some dependency management mechanism. 
